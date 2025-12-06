@@ -56,7 +56,7 @@ const Navbar = () => {
               </button>
             ))}
             <a
-              href="https://drive.google.com/file/d/ID-DOKUMEN/view?usp=sharing"
+              href="https://drive.google.com/file/d/1KuBZWS8fhsYVCTacxfsENm_tHsy5-RXq/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -89,7 +89,7 @@ const Navbar = () => {
                 </button>
               ))}
               <a
-                href="https://drive.google.com/file/d/ID-DOKUMEN/view?usp=sharing"
+                href="https://drive.google.com/file/d/1KuBZWS8fhsYVCTacxfsENm_tHsy5-RXq/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
