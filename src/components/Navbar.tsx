@@ -40,7 +40,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="/" className="font-mono text-lg font-bold">
             <span className="text-primary">&lt;</span>
-            AC
+            Sendi Wildanto
             <span className="text-primary"> /&gt;</span>
           </a>
 
@@ -55,9 +55,15 @@ const Navbar = () => {
                 {link.name}
               </button>
             ))}
-            <Button variant="glow" size="sm">
-              Resume
-            </Button>
+            <a
+              href="https://drive.google.com/file/d/ID-DOKUMEN/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="glow" size="sm">
+                Resume
+              </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -82,9 +88,15 @@ const Navbar = () => {
                   {link.name}
                 </button>
               ))}
-              <Button variant="glow" size="sm" className="w-full">
-                Resume
-              </Button>
+              <a
+                href="https://drive.google.com/file/d/ID-DOKUMEN/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="glow" size="sm">
+                  Resume
+                </Button>
+              </a>
             </div>
           </div>
         )}

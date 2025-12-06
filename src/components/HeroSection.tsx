@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import profileAvatar from "@/assets/profile-avatar.png";
+import profileAvatar from "@/assets/FotoSendiCyber.png";
 
 const HeroSection = () => {
   const scrollToProjects = () => {
@@ -30,7 +30,7 @@ const HeroSection = () => {
             <h1 className="opacity-0 animate-fade-in-up animation-delay-100 text-4xl md:text-6xl lg:text-7xl font-bold font-mono mb-6">
               <span className="text-foreground">Hello, I'm </span>
               <br className="hidden sm:block" />
-              <span className="text-gradient glow-text">Alex Chen</span>
+              <span className="text-gradient glow-text">Sendi Wildanto</span>
             </h1>
             
             <p className="opacity-0 animate-fade-in-up animation-delay-200 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
@@ -52,7 +52,7 @@ const HeroSection = () => {
             {/* Social Links */}
             <div className="opacity-0 animate-fade-in-up animation-delay-400 flex gap-6 justify-center lg:justify-start">
               <a 
-                href="https://github.com" 
+                href="https://github.com/sendinandi" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)]"
@@ -60,7 +60,7 @@ const HeroSection = () => {
                 <Github className="h-6 w-6" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/sendi-wildanto-192a38282/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)]"
@@ -68,7 +68,7 @@ const HeroSection = () => {
                 <Linkedin className="h-6 w-6" />
               </a>
               <a 
-                href="mailto:hello@example.com"
+                href="mailto:sendiwildanto@gmail.com"
                 className="p-3 rounded-full border border-border hover:border-primary hover:text-primary transition-all duration-300 hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)]"
               >
                 <Mail className="h-6 w-6" />
@@ -99,7 +99,7 @@ const HeroSection = () => {
                 Python
               </div>
               <div className="absolute -bottom-2 -left-4 px-3 py-1.5 bg-card border border-accent/50 rounded-full text-xs font-mono text-accent animate-float animation-delay-200 shadow-[0_0_20px_hsl(var(--accent)/0.3)]">
-                Spark
+                Data Engineering
               </div>
               <div className="absolute top-1/2 -right-8 px-3 py-1.5 bg-card border border-primary/50 rounded-full text-xs font-mono text-primary animate-float animation-delay-300 shadow-[0_0_20px_hsl(var(--primary)/0.3)]">
                 AI/ML

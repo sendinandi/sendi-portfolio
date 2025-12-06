@@ -10,14 +10,14 @@ const Footer = () => {
           {/* Logo/Name */}
           <div className="font-mono text-lg">
             <span className="text-primary">&lt;</span>
-            Alex Chen
+            Sendi Wildanto
             <span className="text-primary"> /&gt;</span>
           </div>
           
           {/* Social links */}
           <div className="flex gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/sendinandi"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-muted-foreground hover:text-primary transition-colors"
@@ -25,7 +25,7 @@ const Footer = () => {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/sendi-wildanto-192a38282/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-muted-foreground hover:text-primary transition-colors"
@@ -33,7 +33,7 @@ const Footer = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com/SWildanto67155"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-muted-foreground hover:text-primary transition-colors"

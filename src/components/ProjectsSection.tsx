@@ -3,31 +3,36 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "Real-Time Analytics Pipeline",
-    description: "End-to-end streaming data pipeline processing 1M+ events/sec with Apache Kafka, Spark Streaming, and real-time dashboards.",
-    icon: Database,
-    tags: ["Kafka", "Spark", "Python", "AWS"],
-    gradient: "from-primary/20 to-accent/20",
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "ML Model Serving Platform",
-    description: "Scalable ML inference platform with automated model versioning, A/B testing, and monitoring using MLflow and Kubernetes.",
-    icon: Brain,
-    tags: ["MLflow", "Kubernetes", "FastAPI", "Docker"],
-    gradient: "from-accent/20 to-primary/20",
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "Intelligent ETL Orchestration",
-    description: "Self-healing data pipeline framework with anomaly detection, auto-retry mechanisms, and intelligent scheduling.",
+    title: "SIPDA (Sistem Prediksi Data)",
+    description: "Mengembangkan platform analisis data cerdas berbasis web yang mengintegrasikan Machine Learning dan Generative AI untuk membantu pengambilan keputusan strategis. Sistem ini memungkinkan pengguna melakukan analisis prediktif, diagnostik, dan eksploratif secara otomatis tanpa memerlukan keahlian koding yang mendalam.",
     icon: Workflow,
-    tags: ["Airflow", "dbt", "Snowflake", "Python"],
+    tags: ["Python", "Flask", "MySQL"],
     gradient: "from-primary/20 to-accent/20",
-    link: "#",
-    github: "#",
+    github: "https://github.com/sendinandi/flask-ml-app",
+  },
+  {
+    title: "Website Portofolio Pribadi",
+    description: "Dirancang dan dikembangkan dari awal untuk menampilkan proyek dan keahlian saya. Fokus pada desain yang bersih, responsif, dan pengalaman pengguna yang baik.",
+    icon: Brain,
+    tags: ["Typescript", "Git"],
+    gradient: "from-primary/20 to-accent/20",
+    github: "https://github.com/sendinandi/data-ai-forge",
+  },
+  {
+    title: "Analisis Eksploratif Data Malnutrisi",
+    description: "Melakukan pembersihan, analisis, dan visualisasi data untuk menemukan pola dan korelasi pada dataset kasus malnutrisi di suatu wilayah.",
+    icon: Brain,
+    tags: ["MPython", "Tableau", "Pentahoo"],
+    gradient: "from-accent/20 to-primary/20",
+    github: "https://docs.google.com/document/d/1XIH1U0TPDNZrTtYHY1RQoKSv5M-tgqBe/edit?usp=sharing&ouid=101053715756922803081&rtpof=true&sd=true",
+  },
+  {
+    title: "Analisis Sentimen Ulasan Produk",
+    description: "Menerapkan metode VADER untuk menganalisis dan mengklasifikasikan sentimen (positif, negatif, netral) dari dataset ulasan produk e-commerce.",
+    icon: Workflow,
+    tags: ["Python", "Vader", "Jupyter Notebook"],
+    gradient: "from-primary/20 to-accent/20",
+    github: "https://docs.google.com/document/d/1IOGmhlxwdgdxsAVjirQuUpJLvSG3QW_U/edit?usp=sharing&ouid=101053715756922803081&rtpof=true&sd=true",
   },
 ];
 
@@ -87,14 +92,16 @@ const ProjectsSection = () => {
                 
                 {/* Links */}
                 <div className="flex gap-3">
-                  <Button variant="glow" size="sm" className="flex-1">
-                    <ExternalLink className="h-4 w-4 mr-1" />
-                    Demo
-                  </Button>
+                  <a 
+                    href={project.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="flex-1"
+                  >
                   <Button variant="outline" size="sm" className="flex-1">
-                    <Github className="h-4 w-4 mr-1" />
-                    Code
+                    Source
                   </Button>
+                  </a>
                 </div>
               </div>
             </div>
