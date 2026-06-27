@@ -56,7 +56,7 @@ const Navbar = () => {
               </button>
             ))}
             <a
-              href="https://drive.google.com/file/d/1vlywnzITMTGSlJ6so_dO5lX7OWy_hMmq/view?usp=sharing"
+              href="https://drive.google.com/file/d/17kSNdywNzU_S35P9DaKOStWUMR-dzvRs/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
