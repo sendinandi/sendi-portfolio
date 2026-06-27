@@ -64,7 +64,7 @@ const WelcomeScreen = ({ onComplete }: WelcomeScreenProps) => {
           phase >= 3 ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
         }`}>
           <span className="text-primary">&lt;</span>
-          Data Engineer
+          Data Analyst
           <span className="text-primary"> + </span>
           AI Enthusiast
           <span className="text-primary"> /&gt;</span>

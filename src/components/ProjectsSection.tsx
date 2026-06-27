@@ -1,49 +1,104 @@
-import { Brain, Workflow } from "lucide-react";
+import { Brain, Workflow, BarChart3, Recycle, Activity } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-import sipdaImage from "@/assets/projects/sipda-dashboard.webp";
-import portfolioImage from "@/assets/projects/portfolio-website.webp";
+import sipdaImage from "@/assets/projects/ai-sipda.webp";
+import governmentImage from "@/assets/projects/sipda-dashboard.webp";
+import workforceImage from "@/assets/projects/Visualisasi.webp";
 import malnutritionImage from "@/assets/projects/malnutrition-analysis.webp";
 import sentimentImage from "@/assets/projects/sentiment-analysis.webp";
+import recyclebudImage from "@/assets/projects/recyclebud.webp";
 
 const projects = [
   {
-    title: "SIPDA (Sistem Prediksi Data)",
+    title: "SIPDA Analytics Platform",
     description:
-      "Mengembangkan platform analisis data cerdas berbasis web yang mengintegrasikan Machine Learning dan Generative AI untuk membantu pengambilan keputusan strategis. Sistem ini memungkinkan pengguna melakukan analisis prediktif, diagnostik, dan eksploratif secara otomatis tanpa memerlukan keahlian koding yang mendalam.",
+      "Developed a web-based intelligent analytics platform integrated with statistical analysis, forecasting, anomaly detection, and AI-powered recommendations to support data-driven decision making. Built interactive dashboards for monitoring and exploratory data analysis.",
     icon: Workflow,
     image: sipdaImage,
-    tags: ["Python", "Flask", "MySQL"],
-    github: "https://github.com/sendinandi/flask-ml-app",
+    tags: [
+      "Python",
+      "Flask",
+      "MySQL",
+      "Machine Learning",
+      "Dashboard",
+    ],
+    github: "https://github.com/sendinandi/AI_SIPDA",
   },
+
   {
-    title: "Website Portofolio Pribadi",
+    title: "Government Activity Realization Monitoring System",
     description:
-      "Dirancang dan dikembangkan dari awal untuk menampilkan proyek dan keahlian saya. Fokus pada desain yang bersih, responsif, dan pengalaman pengguna yang baik.",
-    icon: Brain,
-    image: portfolioImage,
-    tags: ["TypeScript", "Git"],
-    github: "https://github.com/sendinandi/data-ai-forge",
-  },
-  {
-    title: "Analisis Eksploratif Data Malnutrisi",
-    description:
-      "Melakukan pembersihan, analisis, dan visualisasi data untuk menemukan pola dan korelasi pada dataset kasus malnutrisi di suatu wilayah.",
-    icon: Brain,
-    image: malnutritionImage,
-    tags: ["Python", "Tableau", "Pentaho"],
-    github:
-      "https://docs.google.com/document/d/1XIH1U0TPDNZrTtYHY1RQoKSv5M-tgqBe/edit?usp=sharing&ouid=101053715756922803081&rtpof=true&sd=true",
-  },
-  {
-    title: "Analisis Sentimen Ulasan Produk",
-    description:
-      "Menerapkan metode VADER untuk menganalisis dan mengklasifikasikan sentimen positif, negatif, dan netral dari dataset ulasan produk e-commerce.",
+      "Designed and developed a web-based monitoring information system for Diskominfostandi Kota Bekasi. Analyzed business requirements, created UML and database design documentation, and implemented role-based workflows to support activity monitoring and validation processes.",
     icon: Workflow,
+    image: governmentImage,
+    tags: [
+      "System Analysis",
+      "UML",
+      "MySQL",
+      "RAD",
+      "Web Development",
+    ],
+    github: "https://github.com/sendinandi/Goverment_Activity",
+  },
+
+  {
+    title: "Employment Placement Analytics Dashboard",
+    description:
+      "Developed an interactive Tableau dashboard using Open Data Kota Bekasi datasets to analyze employment placement trends in 2022–2023. Collaborated in a two-person internship project focused on data visualization, dashboard development, and analytical reporting for public information publication.",
+    icon: BarChart3,
+    image: workforceImage,
+    tags: [
+      "Tableau",
+      "Data Visualization",
+      "Analytics",
+      "Open Data",
+    ],
+    github:
+      "https://opendata.bekasikota.go.id/visualisasi/jumlah-penempatan-kerja-kota-bekasi-tahun-2022-2023",
+  },
+
+  {
+    title: "Exploratory Data Analysis of Malnutrition Cases",
+    description:
+      "Performed data cleaning, exploratory analysis, and data visualization on malnutrition case datasets to identify trends, correlations, and distribution patterns for analytical insights.",
+    icon: Activity,
+    image: malnutritionImage,
+    tags: [
+      "Python",
+      "Tableau",
+      "Pentaho",
+      "Data Analysis",
+      "Visualization",
+    ],
+    github:
+      "https://docs.google.com/document/d/1XIH1U0TPDNZrTtYHY1RQoKSv5M-tgqBe/edit",
+  },
+
+  {
+    title: "Social Media Sentiment Analysis",
+    description:
+      "Implemented the VADER method to analyze and classify positive, negative, and neutral sentiments from social media datasets to identify public opinion trends and sentiment patterns.",
+    icon: Brain,
     image: sentimentImage,
-    tags: ["Python", "VADER", "Jupyter Notebook"],
+    tags: ["Python", "VADER", "NLP", "Jupyter Notebook"],
     github:
       "https://docs.google.com/document/d/1IOGmhlxwdgdxsAVjirQuUpJLvSG3QW_U/edit?usp=sharing&ouid=101053715756922803081&rtpof=true&sd=true",
+  },
+
+  {
+    title: "RecycleBud Innovation Project",
+    description:
+      "Developed a sustainability-focused innovation project featuring an interactive map platform for locating recycled-product sellers and an AI-based waste scanner to recommend potential recycled product outputs from detected waste materials.",
+    icon: Recycle,
+    image: recyclebudImage,
+    tags: [
+      "Innovation",
+      "AI",
+      "Maps",
+      "Sustainability",
+      "Computer Vision",
+    ],
+    github: "https://github.com/sendinandi/Recyclebud",
   },
 ];
 
@@ -53,7 +108,7 @@ const ProjectsSection = () => {
       <div className="absolute inset-0 bg-grid opacity-20" />
 
       <div className="container mx-auto px-6 relative z-10">
-        {/* Section header */}
+        {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-primary font-mono text-sm tracking-wider">
             // PROJECTS
@@ -64,27 +119,27 @@ const ProjectsSection = () => {
           </h2>
 
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A selection of data engineering and AI projects that showcase my
-            technical expertise.
+            Selected projects in data analytics, system analysis, business
+            automation, and intelligent web applications.
           </p>
         </div>
 
-        {/* Projects grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {/* Projects Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {projects.map((project) => (
             <div
               key={project.title}
-              className="group relative rounded-2xl overflow-hidden bg-card border border-border hover:border-primary/50 transition-all duration-500"
+              className="group relative rounded-2xl overflow-hidden bg-card border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_hsl(var(--primary)/0.15)]"
             >
-              {/* Project image */}
-              <div className="h-48 relative overflow-hidden bg-secondary">
+              {/* Project Image */}
+              <div className="h-52 relative overflow-hidden bg-secondary">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
 
-                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-500" />
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500" />
 
                 <div className="absolute top-4 right-4 w-12 h-12 rounded-xl bg-background/80 backdrop-blur-sm flex items-center justify-center border border-border">
                   <project.icon className="h-6 w-6 text-primary" />
@@ -97,7 +152,7 @@ const ProjectsSection = () => {
                   {project.title}
                 </h3>
 
-                <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
+                <p className="text-muted-foreground mb-5 leading-relaxed text-sm">
                   {project.description}
                 </p>
 
@@ -113,7 +168,7 @@ const ProjectsSection = () => {
                   ))}
                 </div>
 
-                {/* Links */}
+                {/* Button */}
                 <div className="flex gap-3">
                   <a
                     href={project.github}

@@ -95,11 +95,14 @@ const HeroSection = () => {
               </div>
               
               {/* Floating badges */}
-              <div className="absolute -top-4 -right-4 px-3 py-1.5 bg-card border border-primary/50 rounded-full text-xs font-mono text-primary animate-float shadow-[0_0_20px_hsl(var(--primary)/0.3)]">
-                Python
+              <div className="absolute -top-4 -left-8 px-3 py-1.5 bg-card border border-accent/50 rounded-full text-xs font-mono text-accent animate-float shadow-[0_0_20px_hsl(var(--accent)/0.3)]">
+                Data Analyst
               </div>
               <div className="absolute -bottom-2 -left-4 px-3 py-1.5 bg-card border border-accent/50 rounded-full text-xs font-mono text-accent animate-float animation-delay-200 shadow-[0_0_20px_hsl(var(--accent)/0.3)]">
-                Data Engineering
+                System Analyst
+              </div>
+              <div className="absolute -top-4 -right-4 px-3 py-1.5 bg-card border border-primary/50 rounded-full text-xs font-mono text-primary animate-float shadow-[0_0_20px_hsl(var(--primary)/0.3)]">
+                Python
               </div>
               <div className="absolute top-1/2 -right-8 px-3 py-1.5 bg-card border border-primary/50 rounded-full text-xs font-mono text-primary animate-float animation-delay-300 shadow-[0_0_20px_hsl(var(--primary)/0.3)]">
                 AI/ML
